@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [],
-    unoptimized: false,
+    unoptimized: true,
   },
   reactStrictMode: true,
-  experimental: {
-    isrMemoryCacheSize: 0,
-  },
-  typescript: {
-    tsconfigPath: './tsconfig.json',
-  },
+  swcMinify: true,
+  compress: true,
 };
 
 module.exports = nextConfig;

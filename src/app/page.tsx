@@ -1,4 +1,6 @@
 'use client';
+
+import React, { useState, useEffect } from 'react';
 import Hero from '@/components/home/Hero';
 import Features from '@/components/home/Features';
 import CTA from '@/components/home/CTA';
@@ -8,6 +10,14 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   const featuredProducts = getFeaturedProducts();
   const newProducts = getNewProducts();
 
