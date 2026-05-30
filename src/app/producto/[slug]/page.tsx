@@ -1,4 +1,3 @@
-'use client';
 import { notFound } from 'next/navigation';
 import { getProductBySlug, products } from '@/data/products';
 import ProductDetailClient from './ProductDetailClient';
@@ -31,5 +30,5 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     notFound();
   }
 
-  return <ProductDetailClient product={product} />;
+  return <ProductDetailClient product={product!} />;
 }
