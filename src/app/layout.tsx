@@ -1,34 +1,19 @@
-import type { Metadata } from 'next';
-import { Inter, Montserrat } from 'next/font/google';
-import './globals.css';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
-import CartDrawer from '@/components/cart/CartDrawer';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import "./productos/globals.css";
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
-const montserrat = Montserrat({ 
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  weight: ['400', '500', '600', '700', '800'],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Lámparas Industriales Neiva | Iluminación Steampunk Artesanal',
-  description: 'Lámparas industriales únicas hechas a mano con tubería en Neiva, Huila. Diseños steampunk y vintage que transforman cualquier espacio. Artesanía de calidad.',
-  keywords: 'lámparas industriales Neiva, iluminación industrial Neiva, lámparas steampunk Huila, lámparas industriales artesanales, tubería industrial neiva, lámparas vintage neiva',
-  authors: [{ name: 'Lámparas Industriales Neiva' }],
-  openGraph: {
-    title: 'Lámparas Industriales Neiva - Iluminación Premium',
-    description: 'Lámparas industriales únicas hechas a mano con tubería. Diseño steampunk artesanal en Neiva.',
-    url: 'https://lamparasindustrialesneiva.com',
-    siteName: 'Lámparas Industriales Neiva',
-    locale: 'es_CO',
-    type: 'website',
-  },
+  title: "Lámparas Industriales Neiva | Lámparas Artesanales",
+  description:
+    "Lámparas industriales artesanales hechas a mano. Diseños únicos en steampunk y estilo industrial.",
+  keywords: "lámparas, industrial, steampunk, artesanal, Neiva",
 };
 
 export default function RootLayout({
@@ -37,12 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${montserrat.variable}`}>
-      <body className="font-sans antialiased bg-white text-neutral-900">
+    <html lang="es">
+      <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
-        <CartDrawer />
       </body>
     </html>
   );
