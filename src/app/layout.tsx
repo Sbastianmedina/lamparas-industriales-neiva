@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/layout/Navbar";
+import NavbarWrapper from "@/components/layout/NavbarWrapper";
 import Footer from "@/components/layout/Footer";
 import CartDrawerWrapper from "@/components/cart/CartDrawerWrapper";
 import "./globals.css";
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Navbar />
+        <NavbarWrapper />
         {children}
         <Footer />
         <CartDrawerWrapper />
