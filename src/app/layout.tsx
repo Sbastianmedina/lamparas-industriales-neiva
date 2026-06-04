@@ -12,16 +12,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lámparas Industriales Neiva | Lámparas Artesanales",
-  description:
-    "Lámparas industriales artesanales hechas a mano. Diseños únicos en steampunk y estilo industrial.",
+  description: "Lámparas industriales artesanales hechas a mano. Diseños únicos en steampunk y estilo industrial.",
   keywords: "lámparas, industrial, steampunk, artesanal, Neiva",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
       <body className={inter.className}>
