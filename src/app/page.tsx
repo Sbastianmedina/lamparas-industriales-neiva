@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="container-app">
             <div className="text-center mb-12">
               <span className="inline-block bg-brand-100 text-brand-700 text-sm font-bold px-4 py-2 rounded-full mb-4">
-                NUEVOS INGRESOS
+                NUEVA COLECCIÓN
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
                 Últimas Creaciones
