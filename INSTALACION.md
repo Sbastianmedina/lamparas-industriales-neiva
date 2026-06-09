@@ -125,7 +125,7 @@ server {
 
 Crear archivo `.env.local`:
 ```bash
-NEXT_PUBLIC_WHATSAPP_NUMBER=573184833330
+NEXT_PUBLIC_WHATSAPP_NUMBER=573013991153
 NEXT_PUBLIC_SITE_URL=https://mundiluz.com
 ```
 
@@ -275,8 +275,8 @@ Verificar que estén en `/public/images/products/`
 
 ## 📞 SOPORTE
 
-- **Email:** contacto@mundiluz.com
-- **WhatsApp:** +57 318 483 3330
+- **Email:** coquecom@hotmail.com
+- **WhatsApp:** +57 301 399 1143
 - **Documentación Next.js:** https://nextjs.org/docs
 
 ## ✅ CHECKLIST PRE-LANZAMIENTO

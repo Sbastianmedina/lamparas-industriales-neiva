@@ -1,4 +1,4 @@
-# 🎨 SCRIPT DE PERSONALIZACIÓN AUTOMÁTICA - MUNDILUZ (Windows)
+# 🎨 SCRIPT DE PERSONALIZACIÓN AUTOMÁTICA - (Windows)
 # Uso: Abre PowerShell en la carpeta y ejecuta: .\personalize.ps1
 
 Write-Host "╔═══════════════════════════════════════════════════════════════════╗" -ForegroundColor Cyan
@@ -16,8 +16,8 @@ $TIKTOK = Read-Host "🎵 Tu TikTok (@usuario)"
 $COLOR_HEX = Read-Host "🎨 Color brand hex (ej: f5870f, presiona Enter para naranja)"
 
 # Valores por defecto
-if ([string]::IsNullOrEmpty($WHATSAPP_URL)) { $WHATSAPP_URL = "573184833330" }
-if ([string]::IsNullOrEmpty($WHATSAPP_DISPLAY)) { $WHATSAPP_DISPLAY = "+57 318 483 3330" }
+if ([string]::IsNullOrEmpty($WHATSAPP_URL)) { $WHATSAPP_URL = "573013991153" }
+if ([string]::IsNullOrEmpty($WHATSAPP_DISPLAY)) { $WHATSAPP_DISPLAY = "+57 301 399 1153" }
 if ([string]::IsNullOrEmpty($STORE_NAME)) { $STORE_NAME = "Mundiluz" }
 if ([string]::IsNullOrEmpty($ADDRESS)) { $ADDRESS = "Calle 79c #11B-17, Bogotá" }
 if ([string]::IsNullOrEmpty($INSTAGRAM)) { $INSTAGRAM = "mundiluz" }
@@ -46,8 +46,8 @@ foreach ($archivo in $archivos) {
         $contenido = Get-Content $archivo -Raw
         
         # Reemplazos
-        $contenido = $contenido -replace "573184833330", $WHATSAPP_URL
-        $contenido = $contenido -replace "\+57 318 483 3330", $WHATSAPP_DISPLAY
+        $contenido = $contenido -replace "573013991153", $WHATSAPP_URL
+        $contenido = $contenido -replace "\+57 301 399 1153", $WHATSAPP_DISPLAY
         $contenido = $contenido -replace "(?<![\w-])Mundiluz(?![\w-])", $STORE_NAME
         $contenido = $contenido -replace "Calle 79c #11B-17", $ADDRESS
         $contenido = $contenido -replace "@mundiluz", "@$INSTAGRAM"

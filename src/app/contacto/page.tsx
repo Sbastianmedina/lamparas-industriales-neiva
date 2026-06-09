@@ -177,7 +177,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-                    <p className="text-neutral-600">contacto@mundiluz.com</p>
+                    <p className="text-neutral-600">coquecom@hotmail.com</p>
                     <p className="text-sm text-neutral-500 mt-1">Respondemos en 24 horas</p>
                   </div>
                 </div>

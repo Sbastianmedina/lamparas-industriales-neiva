@@ -18,12 +18,12 @@ read -p "🎵 Tu TikTok (@usuario): " TIKTOK
 read -p "🎨 Color brand hex (ej: #f5870f, presiona Enter para naranja): " COLOR_HEX
 
 # Valores por defecto
-WHATSAPP_URL=${WHATSAPP_URL:-573184833330}
-WHATSAPP_DISPLAY=${WHATSAPP_DISPLAY:-"+57 318 483 3330"}
-STORE_NAME=${STORE_NAME:-"Mundiluz"}
+WHATSAPP_URL=${WHATSAPP_URL:-573013991153}
+WHATSAPP_DISPLAY=${WHATSAPP_DISPLAY:-"+57 301 399 1153"}
+STORE_NAME=${STORE_NAME:-""}
 ADDRESS=${ADDRESS:-"Calle 79c #11B-17, Bogotá"}
-INSTAGRAM=${INSTAGRAM:-"mundiluz"}
-TIKTOK=${TIKTOK:-"mundiluz"}
+INSTAGRAM=${INSTAGRAM:-"lamparasindustriales_neiva"}
+TIKTOK=${TIKTOK:-"lamparasindustriales_neiva"}
 COLOR_HEX=${COLOR_HEX:-"f5870f"}
 
 echo ""
@@ -32,11 +32,11 @@ echo ""
 
 # Reemplazos principales
 find src -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i \
-  -e "s/573184833330/${WHATSAPP_URL}/g" \
-  -e "s/+57 318 483 3330/${WHATSAPP_DISPLAY}/g" \
+  -e "s/573013991153/${WHATSAPP_URL}/g" \
+  -e "s/+57 301 399 1153/${WHATSAPP_DISPLAY}/g" \
   -e "s/Mundiluz/${STORE_NAME}/g" \
   -e "s/Calle 79c #11B-17/${ADDRESS}/g" \
-  -e "s/@mundiluz/@${INSTAGRAM}/g" \
+  -e "s/@lamparasindustriales_neiva/@${INSTAGRAM}/g" \
   {} \;
 
 echo "✅ Cambios principales aplicados"

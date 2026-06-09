@@ -21,7 +21,7 @@ export default function NosotrosPage() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="font-display text-5xl md:text-6xl font-bold text-neutral-900 mb-6">
-            Sobre Mundiluz
+            Sobre Lamparas Industriales Neiva
           </h1>
           <p className="text-xl text-neutral-600">
             Creadores de lámparas artesanales únicas con estilo industrial y steampunk desde Neiva
@@ -35,7 +35,7 @@ export default function NosotrosPage() {
               Nuestra Historia
             </h2>
             <p className="text-lg text-neutral-700 mb-4 leading-relaxed">
-              Mundiluz nace de la pasión por la creatividad y el diseño artesanal. Lo que comenzó como un hobby se transformó en una misión: crear lámparas únicas que combinen funcionalidad, arte y estilo.
+              Lamparas industriales neiva nace de la pasión por la creatividad y el diseño artesanal. Lo que comenzó como un hobby se transformó en una misión: crear lámparas únicas que combinen funcionalidad, arte y estilo.
             </p>
             <p className="text-lg text-neutral-700 mb-4 leading-relaxed">
               Cada pieza es hecha a mano en Neiva, utilizando materiales de calidad y técnicas artesanales que respetan el medio ambiente. Creemos que cada lámpara debe contar una historia.

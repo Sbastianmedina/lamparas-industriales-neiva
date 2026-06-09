@@ -132,10 +132,10 @@ white: #ffffff      /* Blanco */
 
 ## 📱 Contacto de la Tienda
 
-- **WhatsApp:** +57 318 483 3330
+- **WhatsApp:** +57 301 399 1153
 - **Dirección:** Calle 79c #11B-17, Bogotá
-- **Instagram:** @mundiluz
-- **TikTok:** @mundiluz
+- **Instagram:** @lamparasindustriales_neiva
+- **TikTok:** @lamparasindustriales_neiva
 
 ## 🛠️ Tecnologías Utilizadas
 
