@@ -81,7 +81,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <p>© 2024 Lámparas Industriales Neiva. Todos los derechos reservados.</p>
+          <p>© 2026 Lámparas Industriales Neiva. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
